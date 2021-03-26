@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body, html {
+	background-color: black;
+	width:            100%;
+	height:           100%;
+	outline:          0;
+	margin:           0;
+	padding:          0;
+	overflow:         hidden;
+}
+
+p {
+	font-family: 'Gruppo', cursive;
+	transform:   skew(-15deg);
+	font-size:   18px;
+}
+
+#nav-container {
+	background-color: white;
+	color:            black;
+	height:           100%;
+	width:            300px;
+	position:         absolute;
+	left:             50px;
+	transform:        skew(15deg);
+}
+
+#container {
+	position:     relative;
+	max-width:    1200px;
+	height:       100%;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+#navigation {
+	position:  absolute;
+	top:       50%;
+	transform: translateY(-50%);
+}
+
+.nav-button {
+	font-size:   36px;
+	margin-left: 50px;
+	user-select: none;
+}
+
+.underline.active {
+	font-weight: bold;
+}
+
+.underline:after {
+	content:                    "";
+	position:                   absolute;
+	z-index:                    -1;
+	left:                       0;
+	right:                      100%;
+	bottom:                     -5px;
+	background:                 #000;
+	height:                     3px;
+	transition-property:        left right;
+	transition-duration:        0.2s;
+	transition-timing-function: ease-out;
+}
+
+.underline:hover:after, .underline:focus:after, .underline:active:after, .underline.active:after {right: 0;}
+
+#page-container {
+	position:   absolute;
+	left:       400px;
+	transform:  skew(15deg);
+	height:     100%;
+	width:      800px;
+	color:      white;
+}
+
+#pages {
+	max-width:                  100%;
+	height:                     100%;
+	position:                   absolute;
+	transition:                 top 0.2s;
+	transition-timing-function: ease-in-out;
+	top:                        0%;
+	margin-top:                 48px;
+}
+
+.page {
+	height: 100%;
+}
+
+.skills {
+	margin-top:    12px;
+	margin-bottom: 12px;
+	width:         100%;
+}
+
+.contacts {
+	margin-top:    12px;
+	margin-bottom: 12px;
+	width:         75%;
+}
+
+td {
+	font-family: 'Montserrat', sans-serif;
+	transform:   skew(-15deg);
+	font-size:   18px;
+	width:       25%;
+}
+
+.contacts td {
+	width: 50%;
+}
+
+.content-text {
+	margin-top:    0;
+	margin-bottom: 0;
+	font-family:   'Montserrat', sans-serif;
+}
+
+.title {
+	font-size:     64px;
+	margin-bottom: 0;
+	margin-top:    0;
+}
+
+.subtitle {
+	margin-top: 0px;
+	font-size:  36px;
+}
+
+.project {
+	width:            350px;
+	height:           250px;
+	background-color: black;
+	border:           2px solid white;
+	display:          inline-block;
+	margin:           0;
+	margin-top:       20px;
+	margin-right:     20px;
+	pointer-events:   all;
+	overflow:         hidden;
+}
+
+.project.end {margin-right: 0;}
+
+.project .title {
+	background-color: white;
+	width:            100%;
+	margin:           0;
+	height:           50px;
+	position:         relative;
+	/*top:              200px;*/
+	border-top:       2px solid white;
+}
+
+.project .title p {
+	font-family: 'Montserrat', sans-serif;
+	color:       black;
+	font-size:   18px;
+	margin:      0;
+	margin-top:  10px;
+	height:      30px;
+	line-height: 30px;
+	margin-left: 10px;
+}
+
+.overline:after {
+	content:                    "";
+	position:                   absolute;
+	z-index:                    -1;
+	left:                       0;
+	right:                      100%;
+	bottom:                     -5px;
+	background:                 #000;
+	height:                     3px;
+	transition-property:        left right;
+	transition-duration:        0.2s;
+	transition-timing-function: ease-out;
+}
+
+.overline:hover:after, .overline:focus:after, .overline:active:after {right: 0;}
+
+.thumbnail {
+	width:               400px;
+	height:              200px;
+	background-position: center;
+	position:            relative;
+	transform:           skew(-15deg);
+	overflow:            hidden;
+	left:                -25px;
+}
+
+a {
+	color: lightblue;
+}
+
