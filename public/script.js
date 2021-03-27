@@ -3,6 +3,19 @@
 	Drop me an email at: jamesrbdev@gmail.com 
 */
 
+//——————————————————————————————————————————————————————————————————//
+// INFORMATION                                                      //
+//——————————————————————————————————————————————————————————————————//
+
+// Contributors: James Boehme
+
+// This script is almost entirely dedicated to the navigational
+// buttons' functionality. 
+
+//——————————————————————————————————————————————————————————————————//
+// FUNCTIONS                                                        //
+//——————————————————————————————————————————————————————————————————//
+
 console.log("%cHello! Let me know how I can improve by dropping me an email at: %cjamesrbdev@gmail.com", "font-size: 18px;", "font-size: 18px; color: lightblue; text-decoration: underline;")
 
 // Navigation button.
