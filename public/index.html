@@ -6,6 +6,12 @@
 		Hello! Interested in offering me a position at your company?
 		Drop me an email at: jamesrbdev@gmail.com
 	-->
+
+	<!--
+		TODO: Increase semantics for accessibility.
+		TODO: Change P buttons to actual button tags.
+		TODO: Change DIV images to IMG tags with alt text.
+	-->
 	
 	<!--———————————————————————————————————————————————————————————————-->
 	<!-- HEADER                                                        -->
@@ -30,18 +36,18 @@
 		<div id="container">
 			<div id="nav-container">
 				<div id="navigation">
-					<p id="nav-0" class="nav-button underline active" onclick="navigate(0)">About</p>
-					<p id="nav-1" class="nav-button underline" onclick="navigate(1)">Projects</p>
-					<p id="nav-2" class="nav-button underline" onclick="navigate(2)">Experience</p>
-					<p id="nav-3" class="nav-button underline" onclick="navigate(3)">Contact</p>
+					<p title="About" id="nav-0" class="nav-button underline active" onclick="navigate(0)">About</p>
+					<p title="Projects" id="nav-1" class="nav-button underline" onclick="navigate(1)">Projects</p>
+					<p title="Experience" id="nav-2" class="nav-button underline" onclick="navigate(2)">Experience</p>
+					<p title="Contact" id="nav-3" class="nav-button underline" onclick="navigate(3)">Contact</p>
 				</div>
 			</div>
 
 			<div id="page-container">
 				<div id="pages">
 					<div class="page" id="about">
-						<p class="title">James R. Boehme</p>
-						<p class="subtitle">Software Engineer \ Web Developer</p>
+						<h1 title="Name" class="title">James R. Boehme</h1>
+						<h2 title="Job Title" class="subtitle">Software Engineer \ Web Developer</h2>
 						<p class="content-text">My name is James, a resident of Bryan, Texas that has an ever-growing love</p>
 						<p class="content-text">for all things technology. I also enjoy gaming, gymnastics, and weightlifting.</p>
 						<br>
@@ -68,7 +74,7 @@
 					</div>
 
 					<div class="page" id="projects">
-						<p class="title">Personal Projects</p>
+						<h1 class="title">Personal Projects</h1>
 						<br>
 						<p class="content-text">Throughout the years, I have worked on a significant number of personal projects,</p>
 						<p class="content-text">below are some of my more recent and publicly available ones.</p>
@@ -82,7 +88,7 @@
 					</div>
 
 					<div class="page" id="experience">
-						<p class="title">Work Experience</p>
+						<h1 class="title">Work Experience</h1>
 						<br>
 						<p class="content-text">I've worked on a wide variety of projects, for multiple companies.</p>
 						<p class="content-text">Both professionally, and as a volunteer. Below are those that I have been</p>
@@ -97,7 +103,7 @@
 					</div>
 
 					<div class="page" id="contact">
-						<p class="title">Contact Me</p>
+						<h1 class="title">Contact Me</h1>
 						<br>
 						<p class="content-text">Want to make me an offer, or strike up a conversation?</p>
 						<p class="content-text">You can reach me at any of the links below.</p>

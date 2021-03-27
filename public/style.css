@@ -42,10 +42,12 @@ body, html {
 	overflow:         hidden;
 }
 
-p {
-	font-family: 'Gruppo', cursive;
-	transform:   skew(-15deg);
-	font-size:   18px;
+p, h1, h2, h3, h4 {
+	font-family:     'Gruppo', cursive;
+	transform:       skew(-15deg);
+	font-size:       18px;
+	text-decoration: none;
+	font-weight:     normal;
 }
 
 hr {

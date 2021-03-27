@@ -15,6 +15,9 @@
 // FUNCTIONS                                                        //
 //——————————————————————————————————————————————————————————————————//
 
+// Get readline module.
+const readline = require('readline').createInterface({input: process.stdin, output: process.stdout});
+
 // Create an Express app/
 const express = require("express");
 const app     = express();
@@ -29,17 +32,17 @@ process.on('uncaughtException', function (err) {
 app.use(express.static("public"));
 
 // Start the server listening for requests.
-let server = app.listen(process.env.PORT || 3000, () => console.log("SERVER OPEN ON PORT " + process.env.PORT || 3000));
+let server = app.listen(process.env.PORT || 3000, () => console.log("SERVER OPEN ON PORT " + (process.env.PORT || 3000)));
 
 // Shuts down the server.
 function shutdown() {
 	if (!server || server.closing) {
-		console.log("Shutdown forced.")
+		console.log("Shutdown forced.");
 		process.exit(42);
 	} else {
 		console.log('Shutting down...');
-		// Stop server.
-		server.stop(() => {
+		// Close server.
+		server.close(() => {
 			// Close process with success.
 			console.log("Server shut down.");
 			process.exit(0);
@@ -47,7 +50,7 @@ function shutdown() {
 
 		// Handle timeouts.
 		setTimeout(() => {
-			console.log("Shutdown timed out.")
+			console.log("Shutdown timed out.");
 			process.exit(0);
 		}, 1000);
 	}
