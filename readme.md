@@ -10,4 +10,4 @@ Since I was nine years old, I have been enamored with modern technology, and hav
 
 I am now a professional software engineer and web developer, with over ten years of practical experience and multiple certifications.
 
-If you'd like to get in touch, shoot me an email at [mailto:jamesrbdev@gmail.com](jamesrbdev@gmail.com).
+If you'd like to get in touch, shoot me an email at [jamesrbdev@gmail.com](mailto:jamesrbdev@gmail.com).
