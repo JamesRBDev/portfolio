@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "James Boehme's Website Development and Software Engineering portfolio.",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesRBDev/portfolio.git"
+  },
+  "keywords": [
+    "website",
+    "software",
+    "engineering",
+    "development",
+    "js",
+    "css",
+    "html",
+    "nodejs",
+    "portfolio"
+  ],
+  "author": "James Boehme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesRBDev/portfolio/issues"
+  },
+  "homepage": "https://github.com/JamesRBDev/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
