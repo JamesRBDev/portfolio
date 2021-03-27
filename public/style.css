@@ -23,13 +23,14 @@
 /*——————————————————————————————————————————————————————————————————*/
 
 :root {
+	/* Color Scheme */
 	--fore-color: white;
 	--back-color: black;
 	--link-color: lightblue;
 }
 
 /*——————————————————————————————————————————————————————————————————*/
-/* RULES                                                            */
+/* STRUCTURE                                                        */
 /*——————————————————————————————————————————————————————————————————*/
 
 body, html {
@@ -40,20 +41,6 @@ body, html {
 	margin:           0;
 	padding:          0;
 	overflow:         hidden;
-}
-
-p, h1, h2, h3, h4 {
-	font-family:     'Gruppo', cursive;
-	transform:       skew(-15deg);
-	font-size:       18px;
-	text-decoration: none;
-	font-weight:     normal;
-}
-
-hr {
-	color:            var(--fore-color);
-	border-color:     var(--fore-color);
-	background-color: var(--fore-color);
 }
 
 #nav-container {
@@ -80,6 +67,45 @@ hr {
 	transform: translateY(-50%);
 }
 
+#page-container {
+	position:   absolute;
+	left:       400px;
+	transform:  skew(15deg);
+	height:     100%;
+	width:      800px;
+	color:      var(--fore-color);
+}
+
+#pages {
+	max-width:                  100%;
+	height:                     100%;
+	position:                   absolute;
+	transition:                 top 0.2s;
+	transition-timing-function: ease-in-out;
+	top:                        0%;
+	margin-top:                 48px;
+}
+
+.page {height: 100%;}
+
+/*——————————————————————————————————————————————————————————————————*/
+/* CONTENT                                                          */
+/*——————————————————————————————————————————————————————————————————*/
+
+p, h1, h2, h3, h4 {
+	font-family:     'Gruppo', cursive;
+	transform:       skew(-15deg);
+	font-size:       18px;
+	text-decoration: none;
+	font-weight:     normal;
+}
+
+hr {
+	color:            var(--fore-color);
+	border-color:     var(--fore-color);
+	background-color: var(--fore-color);
+}
+
 .nav-button {
 	font-size:   36px;
 	margin-left: 50px;
@@ -104,27 +130,6 @@ hr {
 }
 
 .underline:hover:after, .underline:focus:after, .underline:active:after, .underline.active:after {right: 0;}
-
-#page-container {
-	position:   absolute;
-	left:       400px;
-	transform:  skew(15deg);
-	height:     100%;
-	width:      800px;
-	color:      var(--fore-color);
-}
-
-#pages {
-	max-width:                  100%;
-	height:                     100%;
-	position:                   absolute;
-	transition:                 top 0.2s;
-	transition-timing-function: ease-in-out;
-	top:                        0%;
-	margin-top:                 48px;
-}
-
-.page {height: 100%;}
 
 .skills {
 	margin-top:    12px;
@@ -229,3 +234,59 @@ td.short {width: 40%;}
 
 a {color: var(--link-color);}
 
+/*——————————————————————————————————————————————————————————————————*/
+/* MEDIA QUERIES                                                    */
+/*——————————————————————————————————————————————————————————————————*/
+
+/* Tablet */
+@media screen and (max-width: 1180px) {
+	#nav-container {
+		display: none;
+	}
+
+	p, h1, h2, h3, h4 {
+		transform: none;
+	}
+
+	#page-container {
+		left: 0;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		overflow-y: scroll;
+		transform: none;
+		position: absolute;
+	}
+
+	#container {
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+	}
+
+	#pages {
+		height: auto;
+		width: 90%;
+		padding-bottom: 100px;
+		margin-bottom: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.page {
+		padding-bottom: 100px;
+	}
+}
+
+/* Phone */
+@media screen and (max-width: 840px) {
+	#page-container {
+		transform: scale(0.75);
+		width: 130%;
+		height: 130%;
+		left: -15%;
+		top: -15%;
+	}
+}
