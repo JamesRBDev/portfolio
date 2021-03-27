@@ -84,6 +84,7 @@ hr {
 	font-size:   36px;
 	margin-left: 50px;
 	user-select: none;
+	cursor:      pointer;
 }
 
 .underline.active {font-weight: bold;}
