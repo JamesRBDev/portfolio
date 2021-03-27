@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "James Boehme's Website Development and Software Engineering portfolio.",
+  "description": "James Boehme's website development and software engineering portfolio.",
   "main": "server.js",
   "scripts": {
     "test": "start"
@@ -19,6 +19,7 @@
     "css",
     "html",
     "nodejs",
+	"express",
     "portfolio"
   ],
   "author": "James Boehme",
