@@ -15,6 +15,7 @@
 /* IMPORTS                                                          */
 /*——————————————————————————————————————————————————————————————————*/
 
+/* These are the two main fonts for the site. */
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
@@ -34,6 +35,7 @@
 /* STRUCTURE                                                        */
 /*——————————————————————————————————————————————————————————————————*/
 
+/* Everything background-related. */
 body, html {
 	background-color: var(--back-color);
 	width:            100%;
@@ -45,6 +47,16 @@ body, html {
 	background-image: radial-gradient(circle at 50% 10%, #161616, var(--back-color));
 }
 
+/* The all-encompassing main container.  */
+#container {
+	position:     relative;
+	max-width:    1200px;
+	height:       100%;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+/* The big diagonal strip that houses navigational elements. */
 #nav-container {
 	background-color: var(--fore-color);
 	color:            var(--back-color);
@@ -56,20 +68,14 @@ body, html {
 	transform:        skew(15deg);
 }
 
-#container {
-	position:     relative;
-	max-width:    1200px;
-	height:       100%;
-	margin-left:  auto;
-	margin-right: auto;
-}
-
+/* The small container for the nav buttons. Stays centered vertically. */
 #navigation {
 	position:  absolute;
 	top:       50%;
 	transform: translateY(-50%);
 }
 
+/* The outside container for pages. */
 #page-container {
 	position:   absolute;
 	left:       400px;
@@ -79,6 +85,7 @@ body, html {
 	color:      var(--fore-color);
 }
 
+/* The inside container for pages. This is animated to slide up and down when navigating. */
 #pages {
 	max-width:                  100%;
 	height:                     100%;
@@ -89,12 +96,14 @@ body, html {
 	margin-top:                 48px;
 }
 
+/* Sets the height of each page to 100%. */
 .page {height: 100%;}
 
 /*——————————————————————————————————————————————————————————————————*/
 /* CONTENT                                                          */
 /*——————————————————————————————————————————————————————————————————*/
 
+/* Text handling. */
 p, h1, h2, h3, h4, .nav-button {
 	font-family:     'Gruppo', cursive;
 	transform:       skew(-15deg);
@@ -103,12 +112,14 @@ p, h1, h2, h3, h4, .nav-button {
 	font-weight:     normal;
 }
 
+/* Changes the color of the horizontal rule. */
 hr {
 	color:            var(--fore-color);
 	border-color:     var(--fore-color);
 	background-color: var(--fore-color);
 }
 
+/* Rules for the navigational buttons. */
 .nav-button {
 	background:  transparent;
 	outline:     none;
@@ -125,8 +136,10 @@ hr {
 	padding:     0;
 }
 
+/* Embolden a selected underline element's text. */
 .underline.active {font-weight: bold;}
 
+/* Add a left-to-right sliding underline. */
 .underline:after {
 	content:                    "";
 	position:                   absolute;
@@ -141,20 +154,24 @@ hr {
 	transition-timing-function: ease-out;
 }
 
+/* Slide the underline on hover/active/focus. */
 .underline:hover:after, .underline:focus:after, .underline:active:after, .underline.active:after {right: 0;}
 
+/* Skills table. */
 .skills {
 	margin-top:    12px;
 	margin-bottom: 12px;
 	width:         100%;
 }
 
+/* Contact info table. */
 .contacts {
 	margin-top:    12px;
 	margin-bottom: 12px;
 	width:         75%;
 }
 
+/* Table data fonts and reverse skewing. */
 td {
 	font-family: 'Montserrat', sans-serif;
 	transform:   skew(-15deg);
@@ -162,27 +179,32 @@ td {
 	width:       25%;
 }
 
+/* Specific table data widths for contact info. */
 .contacts td {width: 60%;}
-td.short {width: 40%;}
+td.short     {width: 40%;}
 
+/* Page contect text coloring, font, and removal of top/bottom margins. */
 .content-text {
 	margin-top:    0;
 	margin-bottom: 0;
 	font-family:   'Montserrat', sans-serif;
-	color: var(--text-color);
+	color:         var(--text-color);
 }
 
+/* Big boy title sizing. */
 .title {
 	font-size:     64px;
 	margin-bottom: 0;
 	margin-top:    0;
 }
 
+/* Medium subtitle sizing. */
 .subtitle {
 	margin-top: 0px;
 	font-size:  36px;
 }
 
+/* A project container. */
 .project {
 	width:            350px;
 	height:           250px;
@@ -196,8 +218,10 @@ td.short {width: 40%;}
 	overflow:         hidden;
 }
 
+/* This removes the right margin on end-cap projects. (The ones on the right.) */
 .project.end {margin-right: 0;}
 
+/* The title box of a project. */
 .project .title {
 	background-color: var(--fore-color);
 	width:            100%;
@@ -208,6 +232,7 @@ td.short {width: 40%;}
 	border-top:       2px solid var(--fore-color);
 }
 
+/* The title text for a project. */
 .project .title p {
 	font-family: 'Montserrat', sans-serif;
 	color:       var(--back-color);
@@ -219,22 +244,9 @@ td.short {width: 40%;}
 	margin-left: 10px;
 }
 
-.overline:after {
-	content:                    "";
-	position:                   absolute;
-	z-index:                    -1;
-	left:                       0;
-	right:                      100%;
-	bottom:                     -5px;
-	background:                 var(--back-color);
-	height:                     3px;
-	transition-property:        left right;
-	transition-duration:        0.2s;
-	transition-timing-function: ease-out;
-}
+/* TODO: Overline for projects. Description on hover. */
 
-.overline:hover:after, .overline:focus:after, .overline:active:after {right: 0;}
-
+/* Project thumbnail. */
 .thumbnail {
 	width:               400px;
 	height:              200px;
@@ -245,6 +257,7 @@ td.short {width: 40%;}
 	left:                -25px;
 }
 
+/* Set default link color. */
 a {color: var(--link-color);}
 
 /*——————————————————————————————————————————————————————————————————*/
