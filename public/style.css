@@ -26,6 +26,7 @@
 	/* Color Scheme */
 	--fore-color: white;
 	--back-color: black;
+	--text-color: #ccc;
 	--link-color: lightblue;
 }
 
@@ -41,11 +42,13 @@ body, html {
 	margin:           0;
 	padding:          0;
 	overflow:         hidden;
+	background-image: radial-gradient(circle at 50% 10%, #161616, var(--back-color));
 }
 
 #nav-container {
 	background-color: var(--fore-color);
 	color:            var(--back-color);
+	background-image: linear-gradient(to bottom, #646464, white 25% 75%, #646464);
 	height:           100%;
 	width:            300px;
 	position:         absolute;
@@ -107,6 +110,9 @@ hr {
 }
 
 .nav-button {
+	background:  transparent;
+	outline:     none;
+	border:      none;
 	font-size:   36px;
 	margin-left: 50px;
 	user-select: none;
@@ -124,8 +130,8 @@ hr {
 	bottom:                     -5px;
 	background:                 var(--back-color);
 	height:                     3px;
-	transition-property:        left right;
-	transition-duration:        0.2s;
+	transition-property:        left, right;
+	transition-duration:        0.2s, 0.2s;
 	transition-timing-function: ease-out;
 }
 
@@ -157,6 +163,7 @@ td.short {width: 40%;}
 	margin-top:    0;
 	margin-bottom: 0;
 	font-family:   'Montserrat', sans-serif;
+	color: var(--text-color);
 }
 
 .title {
