@@ -95,7 +95,7 @@ body, html {
 /* CONTENT                                                          */
 /*——————————————————————————————————————————————————————————————————*/
 
-p, h1, h2, h3, h4 {
+p, h1, h2, h3, h4, .nav-button {
 	font-family:     'Gruppo', cursive;
 	transform:       skew(-15deg);
 	font-size:       18px;
@@ -114,9 +114,15 @@ hr {
 	outline:     none;
 	border:      none;
 	font-size:   36px;
+	margin:      36px;
 	margin-left: 50px;
 	user-select: none;
 	cursor:      pointer;
+	position:    relative;
+	display:     block;
+	width:       calc(100% - 75px);
+	text-align:  left;
+	padding:     0;
 }
 
 .underline.active {font-weight: bold;}
