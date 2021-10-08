@@ -252,7 +252,7 @@ td.short     {width: 40%;}
 	height:              200px;
 	background-position: center;
 	position:            relative;
-	transform:           skew(-15deg);
+	/*transform:           skew(-15deg);*/
 	overflow:            hidden;
 	left:                -25px;
 }
