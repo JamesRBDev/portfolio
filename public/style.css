@@ -15,7 +15,7 @@
 /* IMPORTS                                                          */
 /*——————————————————————————————————————————————————————————————————*/
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat&family=Oxanium&family=Shippori+Antique+B1&display=swap');
 
 /*——————————————————————————————————————————————————————————————————*/
 /* STRUCTURE                                                        */
@@ -23,100 +23,224 @@
 
 /* Everything background-related. */
 body, html {
-	background-color: #0a192f;
+	position:         absolute;
+	background-color: #222222;
 	width:            100%;
 	height:           100%;
 	outline:          0;
 	margin:           0;
 	padding:          0;
+	color:            white;
+}
+
+#background {
+	position:            absolute;
+	width:               100%;
+	height:              100%;
+	background-image:    url(img/dark-wallpaper.png);
+	background-size:     cover;
+	background-position: center;
+	filter:              blur(10px);
+	transition:          filter 1.5s;
 }
 
 #container {
+	/*width:     900px;
+	height:    700px;*/
+	width: 700px;
+	height: 400px;
+	position:  absolute;
+	left:      50%;
+	top:       50%;
+	transform: translate(-50%, -50%);
+	transition: height 0.2s, width 0.2s;
+}
+
+.window {
+	position:         absolute;
+	background-color: rgba(20, 20, 20, 0.9);
+	background:       radial-gradient(rgba(0, 0, 0, 0.5), rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 1));
+	border-radius:    2px;
+	box-shadow:       10px 10px 30px rgba(0, 0, 0, 0.5);
+	width:            100%;
+	height:           100%;
+}
+
+nav {
+	line-height: 32px;
+	height: 32px;
+	width: 100%;
+	text-align: right;
 	position: absolute;
-	left: 50%;
-	padding: 40px;
-	transform: translate(-50%);
-	width: 840px;
-	height: auto;
-}
-
-.box {
-	position: relative;
-	border-style: solid;
-	border-color: #233554;
-	border-width: 2px;
-	color: #e6f1ff;
-	padding: 10px;
-	margin: 20px;
-	width: 800px;
-	height: auto;
-}
-
-.box > h1 {
-	background-color: #0a192f;
-	position: absolute;
-	font-size: 18px;
-	margin: 0;
-	margin-top: -18px;
-	font-family: "Share Tech Mono", monospace;
-	padding-left: 10px;
-	padding-right: 10px;
-	user-select: none;
-	color: #a8b2d1;
-}
-
-.outer-box {
-	position: relative;
-	border-style: solid;
-	border-color: #a8b2d1;
-	display: inline-block;
-	border-width: 2px;
-	padding: 10px;
-	margin: 10px;
 	margin-top: 30px;
-	width: 140px;
-	height: 140px;
-	margin-left: 24px;
-}
-
-.inner-box {
-	position: absolute;
-	width: 160px;
-	height: 160px;
-	margin-top: -30px;
-	margin-left: -30px;
-	background-color: #0a192f;
-	border-style: solid;
-	border-color: #233554;
-	border-width: 2px;
+	right: 40px;
 	user-select: none;
-	transition: border-color 0.5s;
 }
 
-.inner-box:hover {
-	border-color: #8892b0;
-}
-
-.desc-box {
-	background-color: rgba(0, 0, 0, 0.5);
+#pages {
 	position: absolute;
-	width: 140px;
-	height: 140px;
-	padding: 10px;
-	margin-top: -28px;
-	margin-left: -28px;
+	margin-top: 80px;
+	margin-left: 130px;
+	width: calc(100% - 220px);
+	height: calc(100% - 120px);
 }
 
-#headshot {
-	float: right;
-	margin-left: 10px;
+#window-entry, #window-main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#window-entry {
+	text-align: center;
+}
+
+.page, #window-main {
+	transition: opacity 0.2s;
 }
 
 /*——————————————————————————————————————————————————————————————————*/
 /* CONTENT                                                          */
 /*——————————————————————————————————————————————————————————————————*/
 
+#icon {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 30px;
+}
 
+nav > a {
+	margin-right: 10px;
+	margin-left: 40px;
+	font-size: 18px;
+	font-family: 'Shippori Antique B1', sans-serif;
+	color: #cccccc;
+	text-decoration: none;
+	transition: color 0.2s;
+	user-select: none;
+}
+
+nav > a:visited {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+nav > a:hover {
+	color: white;
+}
+
+nav > a.active {
+	color: orange;
+}
+
+a {
+
+}
+
+a:visited {
+	
+}
+
+a:hover {
+
+}
+
+h1 {
+	font-family: 'Shippori Antique B1', sans-serif;
+	font-size: 28px;
+	color: #d9d9d9;
+}
+
+p {
+	color: #cccccc;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.top-divider {
+	width: 50px;
+	height: 3px;
+	margin-left: 0;
+	border: none;
+	border-radius: 2px;
+	background-color: orange;
+}
+
+#window-entry > h1 {
+	font-family: 'Oxanium', cursive;
+	margin-top: 64px;
+	font-size: 64px;
+	letter-spacing: 8px;
+	color: orange;
+	margin-bottom: 10px;
+}
+
+#window-entry > h2 {
+	font-family: 'Shippori Antique B1', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	color: #b1b1b1;
+	margin-top: 0;
+}
+
+button {
+	background-color: rgb(20, 20, 20);
+	border: solid 3px #b1b1b1;
+	color: #b1b1b1;
+	font-size: 24px;
+	font-family: 'Shippori Antique B1', sans-serif;
+	padding: 6px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 10px;
+	border-radius: 2px;
+	transition: color 0.2s, border-color 0.2s;
+	user-select: none;
+	cursor: pointer;
+}
+
+button:hover {
+	color: orange;
+	border-color: orange;
+}
+
+#button-explore {
+	margin-top: 24px;
+}
+
+img {
+	user-select: none;
+}
+
+.thumbnail {
+	padding: 8px;
+	border: 3px solid #b1b1b1;
+	border-radius: 2px;
+	filter: grayscale(1);
+	transition: border-color 1s, filter 1s;
+}
+
+.thumbnail:hover {
+	border-color: orange;
+	filter: grayscale(0);
+}
+
+#headshot {
+	width: 180px;
+	height: 180px;
+	margin-top: -50px;
+	margin-left: 60px;
+	float: right;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+::selection {
+	background: #202020;
+	color:      orange;
+}
 
 /*——————————————————————————————————————————————————————————————————*/
 /* MEDIA QUERIES                                                    */
