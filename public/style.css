@@ -69,7 +69,7 @@ body, html {
 nav {
 	line-height: 32px;
 	height: 32px;
-	width: 100%;
+	width: 600px;
 	text-align: right;
 	position: absolute;
 	margin-top: 30px;
@@ -80,8 +80,8 @@ nav {
 #pages {
 	position: absolute;
 	margin-top: 80px;
-	margin-left: 130px;
-	width: calc(100% - 220px);
+	margin-left: 110px;
+	width: calc(100% - 180px);
 	height: calc(100% - 120px);
 }
 
@@ -99,6 +99,11 @@ nav {
 	transition: opacity 0.2s;
 }
 
+.page {
+	height: 100%;
+	width: 100%;
+}
+
 /*——————————————————————————————————————————————————————————————————*/
 /* CONTENT                                                          */
 /*——————————————————————————————————————————————————————————————————*/
@@ -107,6 +112,13 @@ nav {
 	width: 32px;
 	height: 32px;
 	position: absolute;
+}
+
+#icon-link {
+	display: inline-block;
+	position: absolute;
+	width: 32px;
+	height: 32px;
 	margin-left: 30px;
 	margin-top: 30px;
 }
@@ -136,15 +148,17 @@ nav > a.active {
 }
 
 a {
-
+	color: #ccc;
+	text-decoration: underline;
+	transition: color 0.2s;
 }
 
 a:visited {
-	
+	color: #ccc;
 }
 
 a:hover {
-
+	color: orange;
 }
 
 h1 {
@@ -154,7 +168,7 @@ h1 {
 }
 
 p {
-	color: #cccccc;
+	color: #bfbfbf;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -240,6 +254,40 @@ img {
 ::selection {
 	background: #202020;
 	color:      orange;
+}
+
+#contact-table {
+	position: absolute;
+	float: right;
+	margin: 0;
+	top: 250px;
+	right: 0px;
+	width: 198px;
+	text-align: left;
+}
+
+#contact-table > p {
+	font-family: "Inconsolata", monospace;
+	font-size: 16px;
+	color: #cccccc;
+}
+
+#contact-table a {
+	text-decoration: none;
+}
+
+.contact-icon {
+	user-select: none;
+	filter: grayscale(1);
+	transition: filter 0.5s;
+}
+
+#about-paragraphs {
+	width: 450px;
+}
+
+a:hover > .contact-icon {
+	filter: grayscale(0);
 }
 
 /*——————————————————————————————————————————————————————————————————*/
