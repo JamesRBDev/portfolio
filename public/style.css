@@ -31,6 +31,7 @@ body, html {
 	margin:           0;
 	padding:          0;
 	color:            white;
+	overflow: hidden;
 }
 
 #background {
@@ -288,6 +289,14 @@ img {
 
 a:hover > .contact-icon {
 	filter: grayscale(0);
+}
+
+#skills-table {
+	font-family: "Inconsolata", monospace;
+	font-size: 16px;
+	color: #cccccc;
+	border-spacing: 20px 15px;
+	line-height: 30px;
 }
 
 /*——————————————————————————————————————————————————————————————————*/

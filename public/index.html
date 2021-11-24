@@ -14,13 +14,15 @@
 	<head>
 		<title>James Boehme</title>
 		<meta charset="UTF-8"/>
-		<meta name="description" content="I'm James, a professional software engineer and full-stack web developer with over ten years of practical experience and multiple certifications."/>
+		<meta name="description" content="Hello! My name is James, and I'm a motivated computer programmer with over ten years of practical experience, developed team and leadership abilities, and a passion for the advancement of technology."/>
 		<meta name="keywords"    content="website, development, software, engineering, design"/>
 		<meta name="author"      content="James R. Boehme"/>
 		<meta name="viewport"    content="width=device-width, initial-scale=1.0"/>
+
+		<link rel="shortcut icon" href="favicon.png"/>
+		<link rel="image_src" href="img/site-thumbnail.png"/>
 		
 		<link type="text/css" rel="stylesheet" href="style.css"/>
-		<link rel="shortcut icon" href="favicon.png"/>
 	</head>
 	
 	<!--———————————————————————————————————————————————————————————————-->
@@ -43,9 +45,8 @@
 
 					<nav>
 						<a id="navlink-about"    href="#about"    onclick="setPage('about');" class="active">About</a>
-						<a id="navlink-skills"   href="#skills"   onclick="setPage('skills');">Skills</a>
 						<a id="navlink-projects" href="#projects" onclick="setPage('projects');">Projects</a>
-						<a id="navlink-work"     href="#work"     onclick="setPage('work');">Work</a>
+						<a id="navlink-work"     href="#work"     onclick="setPage('work');">Experience</a>
 						<a id="navlink-contact"  href="#contact"  onclick="setPage('contact');">Contact</a>
 					</nav>
 
@@ -57,21 +58,45 @@
 
 							<div id="about-paragraphs">
 								<p>Hello! My name is James, and I'm a motivated computer programmer with over ten years of practical experience, developed team and leadership abilities, and a passion for the advancement of technology.</p>
+								<p>As a result of my continued persistence and learning, I consider myself proficient in the following technical skills:</p>
+								<br/><hr/>
+								<table id="skills-table">
+									<tr>
+										<td>
+											<ul>
+												<li>HTML5</li>
+												<li>CSS3</li>
+												<li>JavaScript</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li>React.js</li>
+												<li>Node.js</li>
+												<li>MongoDB</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li>Python</li>
+												<li>C++</li>
+												<li>Wordpress</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+								<hr/><br/>
+								<p>I also have a foundational understanding of Excel (and other spreadsheet programs,) as well as experience with a variety of photo editing and digital art programs.</p>
 							</div>
 
 							<div id="contact-table">
 								<p><a href="mailto:jamesrbdev@gmail.com"><span class="contact-icon">📧 </span>jamesrbdev@gmail.com</a></p>
 								<p><a href="tel:+19794856382"><span class="contact-icon">📞 </span>+1 (979) 485-6382</a></p>
-								<p><a href="https://docs.google.com/document/d/1tE3Td4Jh9dhlX1eaJBuYaEYbVDblZnMXw9cE2tGYXbw/edit?usp=sharing"><span class="contact-icon">📑 </span>Resumé</a></p>
-								<p><a href="https://github.com/JamesRBDev"><span class="contact-icon">😺 </span>GitHub</a></p>
-								<p><a href="https://www.linkedin.com/in/jamesrbdev/"><span class="contact-icon">💼 </span>LinkedIn</a></p>
-								<p><a href="https://codepen.io/jamesrbdev"><span class="contact-icon">📦 </span>CodePen</a></p>
+								<p><a href="https://docs.google.com/document/d/1tE3Td4Jh9dhlX1eaJBuYaEYbVDblZnMXw9cE2tGYXbw/edit?usp=sharing" target="_blank"><span class="contact-icon">📑 </span>Resumé</a></p>
+								<p><a href="https://github.com/JamesRBDev" target="_blank"><span class="contact-icon">😺 </span>GitHub</a></p>
+								<p><a href="https://www.linkedin.com/in/jamesrbdev/" target="_blank"><span class="contact-icon">💼 </span>LinkedIn</a></p>
+								<p><a href="https://codepen.io/jamesrbdev" target="_blank"><span class="contact-icon">📦 </span>CodePen</a></p>
 							</div>
-						</div>
-
-						<div class="page" id="page-skills" hidden>
-							<hr class="top-divider"/>
-							<h1>What am I good at?</h1>
 						</div>
 
 						<div class="page" id="page-projects" hidden>
