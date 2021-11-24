@@ -18,12 +18,12 @@
 
 var oldPage = "about";
 
-console.log("%cHello! Let me know how I can improve by dropping me an email at: %cjamesrbdev@gmail.com", "font-size: 18px;", "font-size: 18px; color: lightblue; text-decoration: underline;")
+console.log("%cHello! Let me know how I can improve by dropping me an email at: %cjamesrbdev@gmail.com", "font-size: 18px;", "font-size: 18px; color: orange; text-decoration: underline;")
 
 function start() {
 	let conElem   = document.getElementById("container");
 	let mainElem  = document.getElementById("window-main")
-	conElem.style = "height: 700px; width: 900px;"
+	conElem.style = "height: 720px; width: 900px;"
 
 	document.getElementById("window-entry").hidden = true;
 
