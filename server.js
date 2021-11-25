@@ -3,22 +3,24 @@
 	Drop me an email at: jamesrbdev@gmail.com 
 */
 
-//——————————————————————————————————————————————————————————————————//
-// INFORMATION                                                      //
-//——————————————————————————————————————————————————————————————————//
+//———————————————————————————————————————————————————————————————————————//
+// SECTION Information
+/*———————————————————————————————————————————————————————————————————————//
 
-// Contributors: James Boehme
+Author:      James Boehme / JamesRBDev
+Email:       jamesrbdev@gmail.com
+Description: A Node.js express server.
 
-// Handles everything back-end, all in one place.
+// !SECTION —————————————————————————————————————————————————————————————*/
 
-//——————————————————————————————————————————————————————————————————//
-// FUNCTIONS                                                        //
-//——————————————————————————————————————————————————————————————————//
+//———————————————————————————————————————————————————————————————————————//
+// SECTION Functions
+//———————————————————————————————————————————————————————————————————————//
 
 // Get readline module.
 const readline = require('readline').createInterface({input: process.stdin, output: process.stdout});
 
-// Create an Express app/
+// Create an Express app.
 const express = require("express");
 const app     = express();
 
@@ -70,6 +72,14 @@ readline.on('line', (input) => {
 	}
 });
 
+// !SECTION —————————————————————————————————————————————————————————————//
+
+//———————————————————————————————————————————————————————————————————————//
+// SECTION Calls
+//———————————————————————————————————————————————————————————————————————//
+
 // Shutdown signals.
 process.on("SIGTERM", shutdown);
 process.on("SIGINT",  shutdown);
+
+// !SECTION —————————————————————————————————————————————————————————————//
