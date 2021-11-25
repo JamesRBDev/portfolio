@@ -58,7 +58,7 @@
 
 							<div id="about-paragraphs">
 								<p>Hello! My name is James, and I'm a motivated computer programmer with over ten years of practical experience, developed team and leadership abilities, and a passion for the advancement of technology.</p>
-								<p>As a result of my continued learning persistence, I consider myself most proficient in the following technical skills:</p>
+								<p class="hide-mobile">As a result of my continued learning persistence, I consider myself most proficient in the following technical skills:</p>
 
 								<br class="hide-mobile"/><hr class="hide-mobile"/>
 
@@ -286,6 +286,19 @@
 						<div class="page" id="page-contact" hidden>
 							<hr class="top-divider"/>
 							<h1>How can you get in touch with me?</h1>
+
+							<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyogkjg" method="post">
+								<fieldset id="fs-frm-inputs">
+									<label for="full-name" style="margin-top: 0;">Name</label>
+									<input type="text" name="name" id="full-name" placeholder="e.g. John Doe" required="">
+									<label for="email-address">Email Address</label>
+									<input type="email" name="_replyto" id="email-address" placeholder="e.g. email@example.com" required="">
+									<label for="message">Message</label>
+									<textarea rows="5" name="message" id="message" placeholder="Enter your query here!" required="" ></textarea>
+									<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+								</fieldset>
+								<input type="submit" value="Submit ↲">
+							  </form>
 						</div>
 					</div>
 				</div>

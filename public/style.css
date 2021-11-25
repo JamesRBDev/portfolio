@@ -201,7 +201,7 @@ p {
 	margin-top: 0;
 }
 
-button {
+button, input[type="submit"] {
 	background-color: rgb(20, 20, 20);
 	border: solid 3px #b1b1b1;
 	color: #b1b1b1;
@@ -217,7 +217,7 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
 	color: orange;
 	border-color: orange;
 }
@@ -382,6 +382,54 @@ a:hover > .contact-icon {
 
 h1 > a {
 	text-decoration: none;
+}
+
+#fs-frm-inputs > * {
+	display: block;
+}
+
+#fs-frm-inputs > input, #fs-frm-inputs > textarea {
+	width: 75%;
+	color: #bfbfbf;
+	font-family: 'Montserrat', sans-serif;
+	resize: none;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+label {
+	color: #bfbfbf;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+input, textarea {
+	font-size: 18px;
+	padding: 8px;
+	background-color: black;
+	border: 3px solid #666666;
+	border-radius: 2px;
+	color: #bfbfbf;
+}
+
+input:hover, textarea:hover {
+	border-color: #777777;
+}
+
+input:focus, textarea:focus {
+	border-color: #999999;
+	color: #cccccc;
+	outline: none;
+}
+
+input[type="submit"] {
+	margin-top: 30px;
 }
 
 /*——————————————————————————————————————————————————————————————————*/
