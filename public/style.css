@@ -235,9 +235,9 @@ img {user-select: none;}
 	margin-top:   -50px;
 	margin-left:  60px;
 	float:        right;
-	border-top:   none;
+	/*border-top:   none;
 	border-left:  none;
-	border-right: none;
+	border-right: none;*/
 }
 
 ::selection {
